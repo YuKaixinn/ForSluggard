@@ -1,19 +1,60 @@
 # ForSluggard
 
-As the name suggests , there are codes for sluggard.
+正如这个你看到的名字，这是一个为懒人而生的库
 
-## Score
+~~其实就是一些自动化脚本和常用到的工具~~
 
-A program gets student grades automatically.
+# Score（自动获取成绩）
 
-## DouyinDeleteFans
+python实现的脚本
 
-A program can delete your tiktok fans who aren't real people.
+可能不具有普适性 就不写使用教程了（尴尬）
+# DouyinDeleteFans（抖音粉丝删除工具）
 
-**However, the tiktok on website doesn't support this function.**&#x1F62D;
+功能还未开发完……
 
-## CUGReportTemplate
+# CUGReportTemplate（中国地质大学（武汉）报告模板）
 
-A markdown template can be used in CUG when your homework needs some formulae.
+## 使用教程
 
-**It may be a little hasty. I'll make it up later. Besides, if you use Typora, it may be better.**
+封面：根据课程老师的要求自行修改封面
+
+目录：因为目录长度和子目录大小等未知因素，目录部分需要自己根据实际情况添加换行符。输入命令[toc]自动生成目录
+
+正文：正文部分直接开始写，需要空格的部分可以用```&nbsp;```代替
+
+## 可能遇到的问题
+
+因为markdown可以转化成html格式，所以会有一个css样式表来决定格式的美化，所以可以在编辑器中修改（或注释）对应的css语句。
+
+查询css样式表的位置请根据自己编辑器类型查找
+
+然后可以在浏览器中打开“开发者工具”，对应修改css的内容观察样式，并在旁边的文件链接中打开修改它，就可以实现**去掉下划线，字体太小，目录不美观等**问题
+
+如果你不会css语句，可以去[菜鸟教程](https://www.runoob.com/css/css-tutorial.html)中查找自己想要的功能
+
+记得要重启一下编辑器
+
+## 举个例子
+
+我使用的Typora编辑器，**取消标题下划线**在```C:\Users\****\AppData\Roaming\Typora\themes```目录下对应主题的css文件；**修改目录字体大小**在安装目录中的```Typora\resources\style\base.css```。
+
+（目前我只修改了这两个文件，其他还有补充欢迎找我）
+
+# ImageToPdf（多图转换PDF）
+
+可以自动将img文件夹下的图片连接成pdf输出
+
+## 使用教程
+
+直接将图片按照顺序命名为1,2,...,n
+
+然后将代码中的```.png```改成你的图片格式（```jpg,bmp...```）
+
+然后运行```python main.py```就可以在```output```文件夹下找到对应```output.pdf```文件
+
+如果不喜欢这个文件名，也可以在代码中修改
+
+# 我想说
+
+如果还有其他问题，欢迎与我交流：Q(932163311),V(cls1277)
